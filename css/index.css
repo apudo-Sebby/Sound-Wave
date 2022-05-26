@@ -72,6 +72,25 @@
     background-color: rgba(6, 134, 204, 0.1);
 }
 
+.join-page-circle-3 {
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+.join-page-circle-3::before {
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(6, 134, 204, 0.1);
+}
+
 /* Media query to remove image on smaller screens */
 @media (max-width: 900px) {
     .home-main-section .image-wrapper {
