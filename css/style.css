@@ -2,6 +2,7 @@
 /* Custom Properties */
 :root {
     --dark-clr: #2F303A;
+    --dark-extra-clr: #202027;
     --primary-clr: #1272A7;
     --light-clr: #fff;
 }
@@ -36,6 +37,7 @@ a {
     margin: 0 auto;
     padding-inline: 3rem;
     overflow: hidden;
+    flex-grow: 1;
 }
 
 .full-height-grow {
@@ -69,18 +71,24 @@ a {
     text-decoration: none;
 }
 
-.main-header {
+.main-header,
+.main-footer .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.main-header {
     height: 140px;
 }
 
-.main-nav ul {
+.main-nav ul,
+.footer-nav ul {
     display: flex;
 }
 
-.main-nav a {
+.main-nav a,
+.footer-nav a {
     color: inherit;
     display: flex;
     align-items: center;
@@ -90,6 +98,17 @@ a {
 
 .main-nav a:hover {
     color: #adadad;
+}
+
+/* Footer styling */
+.main-footer {
+    height: 70px;
+    background-color: var(--dark-extra-clr);
+}
+
+.social-link img {
+    width: 1em;
+    margin-right: 0.35rem;
 }
 
 .title {
